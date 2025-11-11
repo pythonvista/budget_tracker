@@ -1,17 +1,15 @@
-
 <?php
 
-$host = "localhost"; // change this to your MySQL hostname
-$user = "user_661773b4"; // change this to your MySQL username
-$pass = "1c39d8a5fadf2d6730d46844fa22346f"; // change this to your MySQL password
-$dbname = "db_0ed9c61a"; // change this to your MySQL database name
+$host = "127.0.0.1"; // Changed from localhost
+$user = "user_661773b4";
+$pass = "1c39d8a5fadf2d6730d46844fa22346f";
+$dbname = "db_0ed9c61a";
+$port = 3306; // Explicitly specify port
 
-$db = new mysqli($host, $user, $pass, $dbname);
+$db = new mysqli($host, $user, $pass, $dbname, $port);
 
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
 
 ?>
-
-
