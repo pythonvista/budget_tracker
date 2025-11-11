@@ -31,7 +31,7 @@
 </head>
 <?php
 // Connect to the database
-include('database.php');
+include_once "database.php";
 // Set error reporting level
 error_reporting(E_ALL);
 $msg = '';
